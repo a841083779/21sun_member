@@ -1,0 +1,716 @@
+body {
+	font: 12px/20px "微软雅黑", "宋体", Arial, sans-serif, Verdana, Tahoma;
+	background-color: #EEE;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: normal;
+	margin: 1em 0 0.75em;
+	page-break-after: avoid;
+}
+
+h2 {
+	color: navy;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 1.25em 0 0.75em;
+	page-break-after: avoid;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0 0 1ex;
+	white-space: nowrap;
+	page-break-after: avoid;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+form {
+	margin: 0;
+}
+div {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+*通用布局面板格式
+*/
+.pane, /*外层面板类*/ .ui-layout-pane { /*内层面板类*/
+	background-color: #FFF;
+	border: 1px solid #777;
+	padding: 0; /*内层div的对齐和填充*/
+	overflow: auto; /*任何含有滚动内容的面板将被自动设置为'隐藏'*/
+}
+
+/*
+*外层布局面板格式
+*/
+.pane-north,.pane-south {
+	overflow: hidden;
+}
+
+.pane-north {
+	border-bottom: none;
+}
+
+.pane-north .content {
+	text-align: center;
+}
+
+.pane-south .content {
+	text-align: left;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	background: #333;
+	color: #B2B2B2;
+	padding-top: 4px;
+	padding-left: 10px;
+}
+
+.pane-center {
+	background-color: #F6F6F6;
+	padding: 0px;
+}
+
+/*面板标头样式*/
+.header {
+	background: #e6e6e6 url(../images/header_bg.gif) 0 50% repeat-x;
+	border-bottom: 1px solid #777;
+	font-weight: bold;
+	text-align: center;
+	padding: 2px 0 4px;
+	position: relative;
+	overflow: hidden;
+}
+.ui-layout-center .header {
+	text-align: left;
+	padding-left: 10px;
+}
+
+/*面板子标头样式*/
+.subhead,.footer {
+	background: #d6d6d6 url(../images/sub_header_bg.png) 0 50% repeat-x;
+	padding: 3px 10px;
+	font-size: 0.85em;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.subhead {
+	border-bottom: 1px solid #777;
+}
+
+.footer {
+	border-top: 1px solid #777;
+}
+
+.content {
+	padding: 0px;
+	position: relative;
+	background: #eee;
+}
+
+/*
+*外层布局重置大小和切换
+*/ /*
+.resizer-north-dragging ,
+.resizer-north:hover		{ background: url(../images/resizable-n.gif) repeat-x center; }*/
+.resizer-south-dragging,.resizer-south:hover {
+	background: url(../images/resizable-s.gif) repeat-x center;
+}
+
+.resizer-west-dragging,.resizer-west-open:hover {
+	background: url(../images/resizable-w.gif) repeat-y center;
+}
+
+.resizer-east-dragging,.resizer-east-open:hover {
+	background: url(../images/resizable-e.gif) repeat-y center;
+}
+
+.resizer-west-open,.resizer-east-open {
+	background-color: #999;
+	opacity: 0.1;
+	filter: alpha(opacity =   10);
+}
+
+.resizer-west-open:hover,.resizer-east-open:hover {
+	opacity: 1;
+	filter: alpha(opacity =   100);
+}
+
+.resizer-dragging { /* see draggable.opacity option
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	*/
+	
+}
+
+/* IE6 HACK - always show resizer graphics because IE6 cannot understand elem:hover */
+	/** html .resizer-north		{ background: url(../images/resizable-n.gif) repeat-x center !important; } */
+* html .resizer-south {
+	background: url(../images/resizable-s.gif) repeat-x center !important;
+}
+
+* html .resizer-west-open {
+	background: url(../images/resizable-w.gif) repeat-y center !important;
+}
+
+* html .resizer-east-open {
+	background: url(../images/resizable-e.gif) repeat-y center !important;
+}
+
+/** html .resizer-north , */
+* html .resizer-south,* html .resizer-west-open,* html .resizer-east-open
+	{
+	opacity: 0.1 !important;
+	filter: alpha(opacity =   10) !important;
+}
+
+/*
+*简单切换按钮，只用于南北面板
+*/
+.toggler-north-open,.toggler-south-closed {
+	background: url(../images/toggle-up.gif) no-repeat center bottom;
+}
+
+.toggler-north-closed,.toggler-south-open {
+	background: url(../images/toggle-dn.gif) no-repeat center top;
+}
+
+/*
+.toggler-east-closed ,
+.toggler-west-open    { background: url(../images/toggle-lt.gif) no-repeat center right; }
+.toggler-west-closed ,
+.toggler-east-open    { background: url(../images/toggle-rt.gif) no-repeat center left; }
+*/ /*东/西面板切换样式*/
+.resizer-west-closed,.resizer-east-closed {
+	background: #D1E6FC url(../images/close_open.gif) 0 0 repeat;
+	border-top: 1px solid #777;
+	border-bottom: 1px solid #777;
+}
+
+.resizer-west-closed:hover,.resizer-east-closed:hover {
+	background: #D1E6FC;
+}
+
+/*
+*北面板工具条和按钮样式
+*/
+ul.toolbar {
+	color: #B2B2B2;
+	position: relative;
+	overflow: hidden; /* required to CONTAINER 'floating li' in FF */
+	margin: 0;
+	list-style: none;
+	text-align: left;
+}
+
+ul.toolbar li {
+	margin: 0;
+	float: left;
+	color: #B2B2B2;
+	cursor: pointer;
+}
+
+ul.toolbar li:hover {
+	background: #FFF;
+}
+
+ul.toolbar li span { /*工具条icon小图标*/
+	width: 30px;
+	height: 30px;
+	margin: 0;
+	vertical-align: middle;
+	opacity: 0.6;
+	filter: alpha(opacity =   60);
+	display: block;
+	display: inline-block;
+}
+
+ul.toolbar li:hover span {
+	opacity: 1;
+	filter: alpha(opacity =   100);
+}
+
+li.button-toggle-north span,li.button-open-south span {
+	background: url(../images/go-up-on.gif) no-repeat center;
+}
+
+li.button-close-south span {
+	background: url(../images/go-dn-on.gif) no-repeat center;
+}
+
+li.button-pin-up span {
+	background: url(../images/pin-up-on.gif) no-repeat center;
+}
+
+li.button-pin-down span {
+	background: url(../images/pin-dn-on.gif) no-repeat center;
+}
+
+/*自定义pin/close按钮样式*/
+span.button-pin,span.button-close {
+	position: absolute;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	z-index: 2;
+	display: block;
+	cursor: pointer;
+}
+
+span.button-close-west {
+	left: 0;
+}
+
+span.button-close-east {
+	right: 0;
+}
+
+span.button-pin-west {
+	right: 1px;
+}
+
+span.button-pin-east {
+	left: 1px;
+}
+
+/*自定义pin按钮样式*/
+span.button-pin-up {
+	background: url(../images/pin-up-off.gif) no-repeat center;
+}
+
+span.button-pin-up:hover {
+	background: url(../images/pin-up-on.gif) no-repeat center;
+}
+
+span.button-pin-down {
+	background: url(../images/pin-dn-off.gif) no-repeat center;
+}
+
+span.button-pin-down:hover {
+	background: url(../images/pin-dn-on.gif) no-repeat center;
+}
+
+/*自定义close按钮样式*/
+span.button-close-west {
+	background: url(../images/go-lt-off.gif) no-repeat center;
+}
+
+span.button-close-west:hover {
+	background: url(../images/go-lt-on.gif) no-repeat center;
+}
+
+span.button-close-east {
+	background: url(../images/go-rt-off.gif) no-repeat center;
+}
+
+span.button-close-east:hover {
+	background: url(../images/go-rt-on.gif) no-repeat center;
+}
+
+/*标准toggler按钮在东/西面板'关闭'的情况下*/
+.toggler-west-closed {
+	background: url(../images/go-rt-off.gif) no-repeat center;
+}
+
+.toggler-west-closed:hover {
+	background: url(../images/go-rt-on.gif) no-repeat center;
+}
+
+.toggler-east-closed {
+	background: url(../images/go-lt-off.gif) no-repeat center;
+}
+
+.toggler-east-closed:hover {
+	background: url(../images/go-lt-on.gif) no-repeat center;
+}
+
+/*左侧菜单样式*/
+.menu {
+	width: 100%;
+	margin: 0;
+}
+
+.menu li a {
+	height: 32px;
+	height: 24px;
+	text-decoration: none;
+}
+
+.menu li a:link,.menu li a:visited {
+	color: #888;
+	display: block;
+	background: url(../images/menu_bg.gif);
+	padding: 8px 0 0 30px;
+}
+
+.menu li a:hover,.menu li a:active {
+	color: #283A50;
+	background: url(../images/menu_bg.gif) 0 -32px;
+	padding: 8px 0 0 30px;
+}
+
+.menu_top_line {
+	height: 5px;
+	margin: 0;
+	padding: 0;
+	background: url("../images/menu_topline.gif") center no-repeat;
+}
+
+#head-top {
+	color: #B2B2B2;
+	height: 45px;
+	margin: 0;
+	background: url("../images/bg-header.gif") center;
+}
+
+#head-top #logo {
+	width: 170px;
+	float: left;
+}
+#head-top #quick-menu {
+	text-align: right;
+	width: 400px;
+	padding-top: 10px;
+	padding-right: 20px;
+	float: right;
+}
+#head-toolbar {
+	color: #B2B2B2;
+	height: 33px;
+	margin: 0;
+	background: #4C4C4C;
+}
+#head-toolbar #layout-toolbar {
+	width: 180px;
+	float: left;
+}
+#head-toolbar #notice {
+	float: left;
+	padding-top: 5px;
+}
+
+/*文本框验证样式*/
+.input {
+	background: url("../images/v-input.gif") 5px no-repeat;
+	padding: 5px 5px 5px 20px;
+	border: 1px solid #B2B2B2;
+	margin: 3px;
+	width: 140px;
+}
+.warning {
+	background: url("../images/v-warning.gif") 5px no-repeat;
+	padding: 5px 5px 5px 20px;
+	border: 1px solid #F00;
+	margin: 3px;
+	width: 140px;
+}
+.ok {
+	background: url("../images/v-ok.gif") 5px no-repeat;
+	padding: 5px 5px 5px 20px;
+	border: 1px solid #0F0;
+	margin: 3px;
+	width: 140px;
+}
+
+/*登录框*/
+#login-container {
+	width: 260px;
+	margin: 0 auto;
+	display: none;
+}
+#login-div {
+	background: #000;
+}
+#login-form {
+	background: #000;
+	color: #FFF;
+	height: 100%;
+}
+.username {
+	width: 140px;
+	background: #FFF url("../images/username.gif") 5px no-repeat;
+	padding: 5px 5px 5px 20px;
+	border: 1px solid #B2B2B2;
+	margin: 3px;
+}
+.upwd {
+	width: 140px;
+	background: #FFF url("../images/password.gif") 5px no-repeat;
+	padding: 5px 5px 5px 20px;
+	border: 1px solid #B2B2B2;
+	margin: 3px;
+}
+.rcode {
+	width: 80px;
+	background: #FFF url("../images/v-input.gif") 5px no-repeat;
+	padding: 5px 5px 5px 20px;
+	border: 1px solid #B2B2B2;
+	margin: 3px;
+}
+.error {
+	border: 1px solid #F00;
+}
+#login-msg {
+	color: #F00;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+/*清除浮动*/
+.clearfloat { /* 此类应当放在 div 或 break 元素上，而且该元素应当是完全包含浮动的容器关闭之前的最后一个元素 */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+/*超链接样式*/
+a.lightBlue:link {
+	color: #72D0FA;
+	text-decoration: none;
+}
+a.lightBlue:visited {
+	text-decoration: none;
+	color: #72D0FA;
+}
+a.lightBlue:hover {
+	text-decoration: underline;
+	color: #72D0FA;
+}
+a.lightBlue:active {
+	text-decoration: none;
+	color: #72D0FA;
+}
+
+a.black:link {
+	color: #4C4C4C;
+	text-decoration: none;
+}
+a.black:visited {
+	text-decoration: none;
+	color: #4C4C4C;
+}
+a.black:hover {
+	text-decoration: underline;
+	color: #4C4C4C;
+}
+a.black:active {
+	text-decoration: none;
+	color: #4C4C4C;
+}
+
+a.lightBlack:link {
+	color: #4C4C4C;
+	text-decoration: underline;
+}
+a.lightBlack:visited {
+	text-decoration: underline;
+	color: #4C4C4C;
+}
+a.lightBlack:hover {
+	text-decoration: underline;
+	color: #4C4C4C;
+}
+a.lightBlack:active {
+	text-decoration: underline;
+	color: #4C4C4C;
+}
+
+/*溢出样式*/
+.overflow{
+    overflow-x: hidden;
+    overflow-y: auto; 
+}
+
+/*UI dialog样式重写*/
+.ui-dialog .ui-dialog-content {
+	padding: 0px;
+}
+.ui-tabs .ui-tabs-panel {
+	padding: 0px;
+}
+
+.float-radio {
+    float: left;
+	margin: auto 5px;
+	height: 25px;
+	overflow: hidden;
+}
+.float-checkbox {
+    float: left;
+	margin: auto 5px;
+	height: 25px;
+	overflow: hidden;
+}
+
+/*表单美化*/
+span.checkbox {
+	width: 19px;
+	height: 25px;
+	padding: 0 5px 0 0;
+	background: url(../images/checkbox.gif) no-repeat;
+	display: block;
+	clear: left;
+	float: left;
+}
+span.checkbox:hover {
+	background: url(../images/checkbox.gif) 0px -25px no-repeat;
+}
+span.radio {
+	width: 19px;
+	height: 25px;
+	padding: 0 5px 0 0;
+	background: url(../images/radio.gif) no-repeat;
+	display: block;
+	clear: left;
+	float: left;
+}
+span.radio:hover {
+	background: url(../images/radio.gif) 0px -25px no-repeat;
+}
+span.select {
+	position: absolute;
+	width: 158px; /* With the padding included, the width is 190 pixels: the actual width of the image. */
+	height: 21px;
+	padding: 0 24px 0 8px;
+	color: #fff;
+	font: 12px/21px arial,sans-serif;
+	background: url(../images/select.gif) no-repeat;
+	overflow: hidden;
+}
+
+/*双色表格*/
+table.sample {
+     border-collapse: collapse;
+     width: 100%;
+     margin: 0px;
+}
+table.sample th {
+     background: #e6e6e6 url(../images/header_bg.gif) 0 50% repeat-x;
+     color: #000;
+     font-weight: bold;
+     padding: 10px;
+     text-align: left;
+     border-right: 1px solid #fff;
+     line-height: 13px;
+}
+table.sample th.table-tool {
+     text-align: right;
+     border-bottom: 1px solid #000;
+}
+table.sample td {
+     padding: 0px;
+     border-bottom: 1px solid #4C4C4C;
+     vertical-align: middle;
+}
+table.sample td.noRecord {
+     text-align: center;
+     vertical-align: middle;
+}
+table.sample td * {
+     padding: 3px;
+}
+table.sample tr.alt td {
+     background: #F5F5F5;
+}
+table.sample tr.over td {
+     background: #bcd4ec;
+}
+
+table.sample td input {
+    background: url("../images/v-input.gif") 5px no-repeat;
+	padding: 5px 5px 5px 20px;
+	border: 1px solid #B2B2B2;
+	margin: 3px;
+	width: 140px;
+}
+
+.h25 {
+	height: 20px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.font-blod {
+	font-weight: bold;
+}
+.redStart {
+	color: #F00;
+}
+
+/*表单验证结果样式*/
+.ajax-form {
+	background: url("../images/prompt_bg.jpg") right bottom no-repeat;
+}
+.error-form {
+	background: url("../images/error_bg.jpg") right bottom no-repeat;
+}
+.success-form {
+	background: url("../images/success_bg.jpg") right bottom no-repeat;
+}
+#messageBox {
+	display: none;
+	padding: 5px;
+	border: 1px solid #F00;
+	background: #FFF;
+}
+
+.pm-div {
+	width: 150px;
+	float: left;
+}
+
+/*---------------------pagination-----------------------------*/   
+   
+div.pagination {    
+    padding:5px;    
+    margin:5px;    
+    text-align:center;    
+    float:left;    
+    font-size:12px;    
+}    
+   
+div.pagination a {    
+    padding: 2px 5px 2px 5px;    
+    margin-right: 2px;    
+    border: 1px solid #ddd;    
+    text-decoration: none;     
+    color: #4C4C4C;    
+}    
+div.pagination a:hover, div.pagination a:active {    
+    border:1px solid #ddd;    
+    color: #fff;    
+    background-color: #CCC;    
+}    
+div.pagination span.cur_page {    
+    padding: 2px 5px 2px 5px;    
+    margin-right: 2px;    
+    border: 1px solid #ddd;    
+    font-weight: bold;    
+    background-color: #4C4C4C;    
+    color: #FFF;    
+}    
+div.pagination span {    
+    padding: 2px 5px 2px 5px;    
+    margin-right: 2px;    
+    border: 1px solid #ddd;    
+    text-decoration: none;     
+    color: #4C4C4C;    
+} 

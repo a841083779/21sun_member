@@ -1,0 +1,72 @@
+<style type="text/css">
+<!--
+body {
+	font-family: Arial; color: #515151; font-size: 12px; line-height: 24px;
+}
+td {font-family: Arial;color: #515151; font-size: 12px; line-height: 24px;} 
+input {font-family: Arial;color: black; font-size: 12px; line-height: 24px;} 
+textarea {font-family: Arial;color: black; font-size: 14px; line-height: 24px;} 
+
+a            { text-decoration: underline }
+a:link       { color: #515151 }
+a:visited    { color: #515151}
+a:hover      { color: #FF9F34; text-decoration: none }
+
+a.1          { text-decoration:  none }
+a.1:link     { color: #6C6C6C }
+a.1:visited  { color: #6C6C6C }
+a.1:hover    { color: #2867B1; text-decoration: underline }
+
+
+a.2          { text-decoration: none}
+a.2:link     { color: #FF5400 }
+a.2:visited  { color: #FF5400 }
+a.2:hover    { color: #2867B1 }
+
+a.3          { text-decoration: none }
+a.3:link     { color: #FFFFFF }
+a.3:visited  { color: #FFFFFF }
+a.3:hover    { color: #FF9F34; text-decoration: none }
+
+a.4          { text-decoration: none }
+a.4:link     { color: #ffffff }
+a.4:visited  { color: #ffffff }
+a.4:hover    { color: #FCF305; text-decoration: none }
+
+a.5          { text-decoration: none }
+a.5:link     { color: #000000; }
+a.5:visited  { color: #000000; }
+a.5:hover    { color: #000000; text-decoration: none;background:url(../images/yh.gif);line-height:35px;width:88px;font-size:25px;}
+
+
+a.30            { text-decoration: none }
+a.30:link       { color:#ffffff }
+a.30:visited    { color:#ffffff }
+a.30:hover      { color:#ffffff ;font-weight:bold}
+
+.main        { color: 484848; font-size: 12px; line-height: 20px }
+.p92         { color: 757575; font-size: 12px; line-height: 24px }
+.p92m        { color: 757575; font-size: 12px; line-height: 18px }
+.p92blue     { color: 3366CC; font-size: 14px; line-height: 18px }
+.p92j         { color: FD6100; font-size: 12px; line-height: 18px }
+.p92b         { color: 757575; font-size: 14px; line-height: 18px }
+.p921         { color:#2867B1; font-size: 12px; line-height: 24px }
+.p922        { color:#2867B1; font-size: 14px; line-height: 24px }
+.p923        { color:F27217; font-size: 12px; line-height: 24px }
+.p924        { color:034093; font-size: 13px; line-height: 24px }
+.p925         { color:#2867B1; font-size: 13px; line-height: 24px }
+.p926        { color:#606060; font-size: 12px; line-height: 24px }
+.p927        { color:#FB7E00; font-size: 13px; line-height: 24px }
+.p928        { color:FF7700; font-size: 14px; line-height: 24px }
+.p98         { color: ffffff; font-size: 12px; line-height: 18px }
+.p981         { color: ffffff; font-size: 14px; line-height: 24px;font-weight:bold }
+.p982         { color: 0C6EC9; font-size: 14px; line-height: 24px;font-weight:bold }
+.pgray       { color: #5D5D5D; font-size: 12px; line-height: 22px }
+.p93         { color: #666666; font-size: 12px; line-height: 18px }
+.pwhite      { color: white; font-size: 12px; line-height: 18px }
+.pwhite2     { color: white; font-size: 12px; line-height: 18px }
+.pwhite3    { color: white; font-size: 14px; line-height: 18px }
+.pblack      { color: black; font-size: 12px; line-height: 18px }
+.black       { color: 3E3E3E; font-family: Arial, Helvetica, sans-serif; font-size: 7pt }
+-->
+</style>

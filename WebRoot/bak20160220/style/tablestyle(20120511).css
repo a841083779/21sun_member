@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 表格公用样式 */
+.list{
+	font-family:Arial;
+	border-collapse:collapse;	/* 边框重叠 */
+	background-color:#ffffff;	/* 表格背景色 */
+	font-size:12px;
+	margin:0px;
+}
+ 
+.list caption{
+	padding-bottom:5px;
+	font:bold 12px;
+	text-align:left;
+}
+ 
+.list th{
+    border-bottom:1px solid #B1C8D7;/* 下方边框颜色 */
+	background:#E5F0FF;	/* 行名称背景色 */
+	color:#2a2a2a;				/* 行名称颜色 */
+	font-weight:bold;
+	padding-left:5px; 
+	text-align:left;
+	line-height:22px;
+}
+.list td{
+	text-align:left;
+	border-bottom:1px solid #eee;
+	padding-left:5px; 
+	padding-top:6px; 
+	padding-bottom:4px; 
+	line-height:22px;	
+}
+
+.list td.cen{
+	text-align:center;
+	border-bottom:1px solid #eee;
+	padding-left:5px; 
+	padding-top:6px; 
+	padding-bottom:4px; 
+	line-height:22px;	
+}
+.list td.right{
+	text-align:right;
+	border-bottom:1px solid #eee;
+	padding-left:5px; 
+	padding-top:6px; 
+	padding-bottom:4px; 
+	line-height:22px;	
+}
+
+.list tr.altrow{
+	background-color:#c7e5ff;	/* 隔行变色 */
+}
+/* 注册样式 */
+.tablezhuce{
+	font-family:Arial;
+	border-collapse:collapse;	/* 边框重叠 */
+	background-color:#ffffff;	/* 表格背景色 */
+	font-size:12px;
+	margin:0px;
+}
+ 
+.tablezhuce caption{
+	padding-bottom:5px;
+	font:bold 12px;
+	text-align:left;
+}
+ 
+.tablezhuce th{
+    border-bottom:1px solid #B1C8D7;/* 下方边框颜色 */
+	background:#E5F0FF;	/* 行名称背景色 */
+	color:#2a2a2a;				/* 行名称颜色 */
+	font-weight:bold;
+	padding-left:5px; 
+	text-align:left;
+	line-height:22px;
+}
+.tablezhuce td{
+	text-align:left;
+	padding-left:5px; 
+	padding-top:6px; 
+	padding-bottom:4px; 
+	line-height:22px;	
+}
+
+.tablezhuce td.cen{
+	text-align:center;
+	border-bottom:1px solid #eee;
+	padding-left:5px; 
+	padding-top:6px; 
+	padding-bottom:4px; 
+	line-height:22px;	
+}
+.tablezhuce td.right{
+	text-align:right;
+	padding-left:5px; 
+	padding-top:6px; 
+	padding-bottom:4px; 
+	line-height:22px;	
+}
+
+.tablezhuce tr.altrow{
+	background-color:#c7e5ff;	/* 隔行变色 */
+}
+/* 注册样2式 */
+.tablezhuce2{
+	font-family:Arial;
+	border-collapse:collapse;	/* 边框重叠 */
+	background-color:#ffffff;	/* 表格背景色 */
+	font-size:12px;
+	margin:0px;
+	border:1px solid #B8CFE0;
+}
+.tablezhuce2 td{
+	text-align:left;
+	padding-left:5px; 
+	padding-top:4px; 
+	padding-bottom:2px; 
+	line-height:22px;	
+	border-right:1px solid #B8CFE0;
+}
+
+
+}

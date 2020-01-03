@@ -1,0 +1,53 @@
+body{
+	background:left 50px rgb(245,242,237)
+}
+div{
+	margin:0px;
+	padding:0px
+}
+ul{
+	margin:0px;
+	padding:0px
+}
+li{
+	margin:0px;
+	padding:0px
+}
+address{
+	font-style:normal;
+	font-weight:normal
+}
+caption{
+	font-style:normal;
+	font-weight:normal
+}
+cite{
+	font-style:normal;
+	font-weight:normal
+}
+em{
+	font-style:normal;
+	font-weight:normal
+}
+ul{
+	list-style:none
+}
+caption{
+	text-align:left
+}
+.cityclear{
+	
+}
+.cityclear::after{
+	height:0px;
+	line-height:0;
+	overflow:hidden;
+	clear:both;
+	font-size:1px;
+	display:block;
+	visibility:hidden;
+	content:"."
+}
+.f_l{
+	float:left
+}

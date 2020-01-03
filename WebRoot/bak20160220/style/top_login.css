@@ -1,0 +1,18 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.New_topbar1 ul li.bit_link { color: #cbcacc; float: left; padding: 5px 10px 0 0; display: inline; margin-right: 7px; position: relative; z-index: 2; margin-left:5px; text-align:left;}
+.New_topbar1 ul li.bit_link { padding: 5px 4px 0 5px; margin-top:-4px; *margin-top:-2px;}
+.New_topbar1 ul li.bit_link ul { display: none }
+.New_topbar1 ul li.bit_hover ul { display: block } 
+.New_topbar1 ul li.bit_link strong { display: block; float: left; font-weight:normal;}
+.New_topbar1 ul li.bit_link a { padding:1px 15px 0 0; display: block; position: relative; width:72px; line-height:18px;}
+.New_topbar1 ul li.bit_link a em { height: 4px; display: block; overflow: hidden; border: 6px solid #06a; border-color: #a6a6a6 transparent; border-width: 4px 4px 0 4px; width: 0; position: absolute; right: 0; top: 7px; *top:5px
+}
+.New_topbar1 ul li.bit_hover a em { border-color: #1E4674 #fff }
+.New_topbar1 ul li.bit_hover strong sub { z-index: 12; background: #fff; position: absolute; bottom: -1px; left: 0; width: 100%; _width: auto; height: 1px; overflow: hidden }
+.New_topbar1 ul li.bit_hover { height: 23px; border: 1px #ccc solid; border-width: 0 1px; background: #fff; -moz-box-shadow: 1px 0 1px #ccc; -webkit-box-shadow: 1px 0 1px #ccc; box-shadow: 1px 0 1px #ccc }
+.New_topbar1 ul li.bit_hover ul { _margin: 0 -2px 0 0; display: block; position: absolute; border: 1px solid #ccc; background: #fff; _border-top: 0; top: 28px; left: -1px; width: 96px; padding: 0 0 9px; z-index: 11; -moz-box-shadow: 1px 1px 1px #ccc; -webkit-box-shadow: 1px 1px 1px #ccc; box-shadow: 1px 1px 1px #ccc }
+.New_topbar1 ul li.bit_hover ul li { border: 1px #E9E9E9 solid; border-width: 0 0 1px 0; float:none; margin: 0 10px; padding: 8px 0 0; height: 22px; display: block }
+.New_topbar1 ul li.bit_hover ul li a { background: url(http://www.21-sun.com/homepic/tubiao_qq.gif) no-repeat; padding: 0 0 0 25px; display: block; height: 16px; line-height: 15px }
+.New_topbar1 ul li.bit_hover ul li a.sina { background-position: 0px 0px }
+.New_topbar1 ul li.bit_hover ul li a.qq { background-position: 0px -33px }

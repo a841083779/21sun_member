@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 2.6//EN"
+        "http://tuckey.org/res/dtds/urlrewrite2.6.dtd">
+
+<!--
+
+    Configuration file for UrlRewriteFilter
+    http://tuckey.org/urlrewrite/
+
+-->
+
+<urlrewrite>
+
+        <!--<rule>
+            <from>/shop/info_(\w+).shtm</from>
+            <to>/shop/detail.jsp?myvalue=$1</to>
+        </rule>--> 
+        
+        <rule>
+            <from>/*/(\w+)_for_(\w+).shtm</from>
+            <to>/$2.jsp?myvalue=$1</to>
+        </rule>
+         <rule>
+            <from>/*/(\w+)_detail_(\w+).shtm</from>
+            <to>/$2.jsp?myvalue=$1</to>
+        </rule>
+        <rule>
+         <from>/*/(\w+)_(\w+)_list_(\w+).shtm</from>
+          <to>/$3.jsp?myvalue=$1&amp;offset=$2</to>
+        </rule>
+        <rule>
+         <from>/*/(\w+)_(\w+)_(\w+)_(\w+).shtm</from>
+           <to>/$4.jsp?myvalue=$1&amp;offset=$2&amp;catalogno=$3</to>
+        </rule>
+        <rule>
+         <from>/*/(\w+)_(\w+)_(\w+).shtm</from>
+           <to>/$3.jsp?para1=$1&amp;para2=$2</to>
+        </rule>
+       <!--<rule>
+       <from>/*/_(\w+).shtm</from>
+           <to>/$1.jsp</to>
+        </rule>-->
+</urlrewrite>

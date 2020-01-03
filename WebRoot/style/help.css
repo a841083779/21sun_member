@@ -1,0 +1,14 @@
+﻿@charset "utf-8";
+/* CSS Document */
+div{ margin:0; padding:0;}
+img{ border:0;}
+ul, ul li,li{list-style: none; padding:0;margin:0} 
+
+/*店铺选择*/
+.clear { clear:both; height:0; line-height:0; font-size:1px;}
+.parthelp	{float:left; width:740px;height:auto;border:1px solid #e1e1e1; background-color:#FFF; margin-top:10px;overflow:hidden}
+.parthelp_1 {float:left; width:720px;height:auto;overflow:hidden;background:#ffffff;margin:5px 10px;display:inline;}
+.parthelp_2	{float:left; width:580px;height:auto;background:#ffffff;color:#676767;font-size:12px;display:inline;}
+.parthelp_2_0 {float:left; width:720px;height:auto;background:#ffffff;color:#676767;font-size:12px;display:inline;}
+.parthelp_2_00 {float:left; width:720px;height:auto;background:#ffffff;font-weight:bold;color:#676767;font-size:12px;display:inline;}
+.parthelp_2_1 {float:right; width:80px;height:25px;background:#ffffff;display:inline;}

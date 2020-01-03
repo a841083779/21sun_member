@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <!--
+ * FCKeditor - The text editor for Internet - http://www.fckeditor.net
+ * Copyright (C) 2003-2008 Frederico Caldeira Knabben
+ *
+ * == BEGIN LICENSE ==
+ *
+ * Licensed under the terms of any of the following licenses at your
+ * choice:
+ *
+ *  - GNU General Public License Version 2 or later (the "GPL")
+ *    http://www.gnu.org/licenses/gpl.html
+ *
+ *  - GNU Lesser General Public License Version 2.1 or later (the "LGPL")
+ *    http://www.gnu.org/licenses/lgpl.html
+ *
+ *  - Mozilla Public License Version 1.1 or later (the "MPL")
+ *    http://www.mozilla.org/MPL/MPL-1.1.html
+ *
+ * == END LICENSE ==
+ *
+ * This is the sample templates definitions file. It makes the "templates"
+ * command completely customizable.
+ *
+ * See FCKConfig.TemplatesXmlPath in the configuration file.
+-->
+    <Templates imagesBasePath="fck_template/images/">
+	
+      <Template title="扩展功能样式一" image="case1.gif">
+        <Description>
+扩展功能样式一
+        </Description>
+        <Html>
+          <![CDATA[
+<div class="sidebar"><div class="sidebar_zibt">相关信息链接</div><div class="sidebar_zibt">三一历史</div><div class="sidebar_zinl">三一秉承“品质改变世界”经营理念，将销售收入的5%-7%用于研发，致力于将产品升级换代至世界一流</div><div class="sidebar_ima"><img src="/internet/images/xzzx.gif" alt="下载观看"/></div></div>
+          ]]>
+        </Html>
+      </Template>
+	  
+	        <Template title="扩展功能样式二" image="case2.gif">
+        <Description>
+扩展功能样式二
+        </Description>
+        <Html>
+          <![CDATA[
+<div class="sidebar1"><div class="sidebar_zibt">相关信息链接</div><div class="sidebar_zibt">三一历史</div><div class="sidebar_zinl">三一秉承“品质改变世界”经营理念，将销售收入的5%-7%用于研发，致力于将产品升级换代至世界一流</div><div class="sidebar_ima"><img src="/internet/images/xzzx.gif" alt="返回顶部"/></div></div>
+          ]]>
+        </Html>
+      </Template>
+	  
+	        <Template title="扩展功能样式三" image="case3.gif">
+        <Description>
+扩展功能样式三
+        </Description>
+        <Html>
+          <![CDATA[
+<div class="sidebar2" style="background-image:url(/internet/images/rightu_bg.jpg);background-repeat:no-repeat"><div class="sidebar_zibt">相关信息链接</div><div class="sidebar_zibt">三一历史</div><div class="sidebar_zinl">三一秉承“品质改变世界”经营理念，将销售收入的5%-7%用于研发，致力于将产品升级换代至世界一流</div><div class="sidebar_ima"><img src="/internet/images/xzzx.gif" alt="下载观看"/></div></div>
+          ]]>
+        </Html>
+      </Template>
+	  
+    </Templates>

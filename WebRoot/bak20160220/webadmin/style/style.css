@@ -1,0 +1,72 @@
+<style type="text/css">
+<!--
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin:0px; 
+	background-color:#E6EBF0;
+}
+
+
+body,td,th {
+	color: #383838;
+	font-size: 12px;
+	font-family: Arial;
+	line-height:23px
+}
+
+
+a            { text-decoration: none }
+a:link       { color: 383838 }
+a:visited    { color: 383838 }
+a:hover      { color: #CF0C14; text-decoration: underline}
+
+
+a.top            { text-decoration: none }
+a.top:link       { color: FFFFFF }
+a.top:visited    { color: FFFFFF  }
+a.top:hover      { color: 323232;text-decoration: none }
+
+a.foot            { text-decoration: none }
+a.foot:link       { color: 383838 }
+a.foot:visited    { color: 383838  }
+a.foot:hover      { color: 308CC9; text-decoration: none}
+
+
+a.lim            { text-decoration: none }
+a.lim:link       { color: 6C6C6C }
+a.lim:visited    { color: 6C6C6C  }
+a.lim:hover      { color: E11921; text-decoration: none}
+
+a.rent            { text-decoration: none }
+a.rent:link       { color: 6C6C6C }
+a.rent:visited    { color: 6C6C6C  }
+a.rent:hover      { color: 2776A9; text-decoration: underline}
+
+a.h            { text-decoration: none }
+a.h:link       { color: FF4E00 }
+a.h:visited    { color: FF4E00  }
+a.h:hover      { color: FF4E00; text-decoration: underline}
+
+
+a.link02          { text-decoration:none  ;}
+a.link02:link     { color: #626262 ;}
+a.link02:visited  { color: #626262 ;}
+a.link02:hover    { color: #FFFFFF; text-decoration: none;}
+
+
+.p92         { color: black; font-size: 12px; line-height: 19px }
+.p9         { color: #6B7D8C; font-size: 12px; line-height: 18px }
+.main         { color: #383838; font-size: 13px; line-height: 20px }
+.bottom {font-family: "Arial","verdana",  "Helvetica"; font-size: 12px; color: #ffffff; filter: DropShadow(Color=#5D5D5D, OffX=1, OffY=1); line-height: 15pt;}
+.menu {font-family: "Arial","verdana",  "Helvetica"; font-size: 12px; color: #ffffff; filter: DropShadow(Color=#737273, OffX=1, OffY=1); line-height: 12pt;}
+.p921         { color:#383838; font-size: 12px; line-height: 20px }
+.p920         { color:#383838; font-size: 12px; line-height: 18px }
+.p94         { color: #5E5E5E; font-size: 14px; line-height: 23px }
+.p942         { color: black; font-size: 12px; line-height: 25px }
+.black       { color: 3E3E3E; font-family: Arial, Helvetica, sans-serif; font-size: 9pt }
+input {border: 1px solid #C5C5C5;padding-top:2px;} 
+</style>

@@ -1,0 +1,16 @@
+.friend_link { clear:both;width:950px;height:50px;margin:0 auto;margin-top:5px;border:1px solid #C9C9C9;background-color: #F8F8F8;text-align:center;}
+.friend_link li {float:left;width:190px;height:20px;margin-top:5px;font-size:12px;color:#ff0000;}
+.friend_link li.m1 {float:left;width:116px;height:20px;margin-top:5px;}
+ 
+/*css清除浮动*/
+.clear { clear:both; font-size:0px; line-height:0px;}
+/*clearfix:after*/
+.clearfix:after { content:"."; display:block; height:0px; clear:both; visibility:hidden;}
+.clearfix { display:inline-table; display:block;}
+*html .clearfix { height:1%;}
+*+html .clearfix { height:1%;}
+ 
+.friend_link.clearfix { height:auto;}
+.link_left { width:190px; float:left;}
+.link_right { width:760px; float:right;}
+.link_right li { text-align:left;}

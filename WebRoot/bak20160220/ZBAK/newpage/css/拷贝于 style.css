@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 默认公用样式 */
+body {background:url(../images/homeback.jpg) repeat-x;margin: 0px;padding:0;color:#676767;font-size: 12px; font-family:Arial, Helvetica, sans-serif; line-height:20px;}
+form{margin:0}
+textarea{margin:0;border:1px solid #ddd;font-size:12px;color:#676767;overflow:hidden;}
+select{margin:0;border:1px solid #ddd;font-size:12px;color:#676767;}
+input{margin:0;border:1px solid #ddd;font-size:12px;color:#676767;}
+input.top01{margin:0;border:1px solid #ddd;font-size:12px;color:#676767;background:url(../images/topsearch.gif) no-repeat;padding-left:20px;margin-right:5px;}
+input.search{margin:0;;border:0;font-size:12px;color:#676767;}
+input.search1{margin:0;;border:0;font-size:12px;color:#fff;background:url(../images/search.gif) no-repeat;width:67px;height:22px;line-height:22px;padding:0;}
+input.search2{margin:0;;border:0;font-size:12px;color:#000;background:url(../images/reset.gif) no-repeat;width:67px;height:22px;line-height:22px;padding:0;}
+div{ margin:0; padding:0;}
+img{ border:0;}
+ul, ul li,li{list-style: none; padding:0;margin:0} 
+
+/* 公用字体 */
+.title12 { color: #0F2160; font-size: 12px;font-weight:bold;}
+.grayb { color: #676767; font-size: 12px;font-weight:bold;}
+.blackb { color: #000000; font-size: 12px;font-weight:bold;}
+.blue12 { color: #013688; font-size: 12px;}
+.mainyh { color: #013688; font-size: 14px;font-family:Microsoft yahei;line-height:28px;}
+.mainyh1 { color: #013688; font-size: 14px;font-family:Microsoft yahei;}
+.maingray { color: #676767; font-size: 12px;font-family:Microsoft yahei;line-height:20px;}
+.main14 { color: #013688; font-size: 14px;line-height:28px;font-weight:bold;}
+.newsdata { color: #676767; font-size: 11px;line-height:22px;font-weight:bold;}
+.newsdata1 { color: #676767; font-size: 10px;line-height:22px;}
+
+/* 公用链接 */
+a{ text-decoration:  none }
+a:link     { color: #676767 ;}
+a:visited  { color: #676767;}
+a:hover    { color: #013688; text-decoration: none;}
+
+a.graybold{ text-decoration:  none }
+a.graybold:link     { color: #676767;font-weight:bold;}
+a.graybold:visited  { color: #676767;font-weight:bold;}
+a.graybold:hover    { color: #013688; text-decoration: none;font-weight:bold;}
+
+a.blue{ text-decoration:  none }
+a.blue:link     { color: #013688 ;font-weight:bold;}
+a.blue:visited  { color: #013688;font-weight:bold;}
+a.blue:hover    { color: #013688; text-decoration: none;font-weight:bold;}
+
+a.blue1{ text-decoration:  none }
+a.blue1:link     { color: #013688 ;}
+a.blue1:visited  { color: #013688;}
+a.blue1:hover    { color: #013688; text-decoration: none;}
+
+
+a.blue_border{ text-decoration:  none ;}
+a.blue_border:link     { color: #013688;padding:3px 8px 3px 8px;border:1px solid #ddd;margin-bottom:5px;line-height:36px;}
+a.blue_border:visited  { color: #013688;padding:3px 8px 3px 8px;border:1px solid #ddd;margin-bottom:5px;line-height:26px;}
+a.blue_border:hover    { color: #013688; text-decoration: none;padding:3px 8px 3px 8px;border:1px solid #013688;margin-bottom:5px;line-height:26px;background:#eee;}
+
+
+a.orange{ text-decoration:  none }
+a.orange:link     { color: #ff6600;font-weight:bold;}
+a.orange:visited  { color: #ff6600;font-weight:bold;}
+a.orange:hover    { color: #676767; text-decoration: none;font-weight:bold;}
+
+a.gray18{ text-decoration:  none }
+a.gray18:link     { color: #676767; line-height:18px;}
+a.gray18:visited  { color: #676767;  line-height:18px;}
+a.gray18:hover    { color: #013688; text-decoration: none;  line-height:18px;}
+
+a.black{ text-decoration:  none }
+a.black:link     { color: #333;}
+a.black:visited  { color: #333;}
+a.black:hover    { color: #013688; text-decoration: none;}
+
+a.blueblock{ text-decoration:  none }
+a.blueblock:link     {width:10px;height:10px;color: #fff;font-weight:bold;background:#013688;text-align:center;line-height:12px;padding:0 2px;font-size:11px;}
+a.blueblock:visited  {width:10px;height:10px;color: #fff;font-weight:bold;background:#013688;text-align:center;line-height:12px;padding:0 2px;font-size:11px;}
+a.blueblock:hover    {width:10px;height:10px;color: #fff; text-decoration: none;font-weight:bold;background:#013688;text-align:center;line-height:12px;padding:0 2px;font-size:11px;}
+
+
+
+/* 模板公用样式 */
+.img01{float:left;margin-right:10px;}
+.img02{float:left;margin-right:10px;padding:3px;border:1px solid #ddd;}
+.img03{float:left;margin-right:10px;padding-top:5px;}
+.imgleft{float:left;}
+.imgright{float:right;margin-left:10px;}
+.imgright1{float:right;margin-left:10px;padding:0;}
+
+
+.top{width:1004px;height:70px;margin:0 auto;margin-bottom:9px;}
+.toplogo{float:left;height:auto;overflow:hidden;margin-top:28px;padding:0 12px 0 30px;border-right:1px dotted #8D8D8D;}

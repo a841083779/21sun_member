@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="21sun_member"
+  id="myeclipse.1284712969687"
+  context-root="/21sun_member"
+  j2ee-spec="1.4"
+  archive="21sun_member.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

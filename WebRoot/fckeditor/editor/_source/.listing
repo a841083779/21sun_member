@@ -1,0 +1,9 @@
+drwxrwxrwx    5 0        0            4096 Jun 26 09:41 .
+drwxrwxrwx   13 0        0            4096 Jun 26 09:41 ..
+drwxrwxrwx    2 0        0            4096 Jun 26 09:41 classes
+drwxrwxrwx    2 0        0            4096 Jun 26 09:41 commandclasses
+-rwxrwxrwx    1 0        0            1968 Jun 26 09:41 fckconstants.js
+-rwxrwxrwx    1 0        0            5497 Jun 26 09:41 fckeditorapi.js
+-rwxrwxrwx    1 0        0            3804 Jun 26 09:41 fckjscoreextensions.js
+-rwxrwxrwx    1 0        0            5616 Jun 26 09:41 fckscriptloader.js
+drwxrwxrwx    2 0        0            4096 Jun 26 09:41 internals

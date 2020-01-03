@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Expires" CONTENT="0">
+<meta http-equiv="Cache-Control" CONTENT="no-cache">
+<meta http-equiv="Pragma" CONTENT="no-cache">
+<title>注册新浪会员</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/signup/common.js"></script>
+<script type="text/javascript" src="/js/signup/vconf.js"></script>
+<script type="text/javascript" src="/js/signup/validator.js"></script>
+</head>
+ 
+<body>
+ 
+<div id="wrap">
+  <div class="head">
+    <div class="logo"></div>
+	<div class="logotxt">- 注册</div>
+	<div class="headlink" ><a href="http://www.sina.com.cn/">新浪首页</a> | <a href="/help.html">帮助</a></div>
+	<div class="clearit"></div>
+  </div>
+  <div class="main">
+  <form method="post" id="vForm" name="vForm" action="/signup/signup1.php">
+  <input type="hidden" name="act" value="1">
+  <input type="hidden" name="entry" value="sso">
+  <input type="hidden" name="returnURL" value="">
+  <input type="hidden" name="corp" value="">
+  <input type="hidden" name="referer" value="980efe521296927968a67d0c98c2efa1">
+ 
+    <div class="logoicon"></div>
+    <div class="main_top">
+	  <ul class="step">
+		  <li class="step1_c"></li>
+		  <li class="steparrow"></li>
+		  <li class="step2"></li>
+		  <li class="steparrow"></li>
+		  <li class="step3"></li>
+      </ul>
+      <p class="title_note red">验证码输入有误，请重新输入</p>    </div>
+	<div class="main_cen">
+      <p class="title">注册新浪免费邮箱</p>
+	  <ul class="maintable">
+	    <li>
+	      <p class="notice1 link"  ><span class="fb">提示：</span>如果您有常用邮箱，也可用于注册新浪会员。<a href="/signup/signupmail.php?entry=sso&r=">用常用邮箱注册</a></p>
+			</li>
+	    <li>
+		  <div class="mt_l"><span class="red">*</span>邮箱名称：</div>
+		  <div class="mt_r" style="z-index:3;">
+		    <div class="inputbox"><span class="input"><cite>
+		    	<input id="username" name="username" type="text" maxlength="17" alt="邮箱名:无内容/长度{4-16}/首尾不能是下划线/全部怪字符/全数字/下划线/有中文/有全角/有空格/有大写/邮箱注册排重/errArea{usernametip}" value="mengl" />
+		    </cite></span></div>
+		    <span class="inputStxt" style="margin-top:1px;font-size:20px;font-weight:bold;color:red;">@sina.cn</span>
+              <input type="hidden" value="cn" name="mailType" id="mailTypeValue" />
+<!--
+		    <div id="onWrap" class="inputboxS selectSmallinput">
+			  <span class="input" id="selMail"><cite><span id="selLiConn" style="color:red;font-weight:bold;">sina.cn</span><img src="/images/signup/arrow.gif" /></cite></span>
+              <input type="hidden" value="cn" name="mailType" id="mailTypeValue" />
+			</div>
+			<div class="selectSmall" style="display:none;" id="selMailCon">
+			<ul>
+			  <li><a href="javascript:void(0);">sina.cn</a></li>
+			<li><a href="javascript:void(0);">sina.com</a></li>  
+			</ul>
+			</div>
+-->
+			<span id="usernametip"></span>
+			<div class="inputtxt zi_9">4-16位之间，请用英文小写、数字、下划线，不能全部是数字或下划线。</div>
+		  </div>
+		</li>
+	    <li>
+		  <div class="mt_l"><span class="red">*</span>验证码：  <input type="hidden" name="readmerand" value="gdfgfgdfgdggrewfdgdfg"></div>
+		  <div class="mt_r">
+		    <div class="inputbox"><span class="input"><cite>
+				<input autocomplete="off" id="door" name="door" type="text" maxlength="10" alt="验证码:无内容/有空格/errArea{doortip}" value="" />
+			</cite></span></div>
+			<span id="door_img" style="display:none;">
+				<span><img id="check_img" src="" /></span>
+				<span class="inputacc link"><a href="javascript:con_code();">看不清</a>？</span>
+			</span>
+			<span id="doortip"></span>
+		  </div>
+		</li>
+	    <li>
+		  <div class="mt_l"></div>
+		  <div class="mt_r">
+		    <input type="submit" name="submit" class="btn_submit" value="下一步" />
+		  </div>
+		</li>
+	  </ul>
+	</div>
+    <div class="main_bottom"></div>
+  </form>
+  </div>
+  <div class="Footer">
+		<p>客户服务电话 <a target="_blank" href="http://help.sina.com.cn/contact/contact.html">95105670</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎批评指正</p>
+<p><a target="_blank" href="http://corp.sina.com.cn/chn/">新浪简介</a> | <a target="_blank" href="http://corp.sina.com.cn/eng/">About Sina</a> | <a target="_blank" href="http://ads.sina.com.cn/">广告服务</a> | <a target="_blank" href="http://www.sina.com.cn/contactus.html">联系我们</a> | <a target="_blank" href="http://corp.sina.com.cn/chn/sina_job.html">招聘信息</a> | <a target="_blank" href="http://www.sina.com.cn/intro/lawfirm.shtml">网站律师</a> | <a target="_blank" href="http://english.sina.com/">SINA English</a> | <a target="_blank" href="http://members.sina.com.cn/apply/">会员注册</a> | <a target="_blank" href="http://tech.sina.com.cn/focus/sinahelp.shtml">产品答疑</a></p>
+<p>Copyright &copy; 1996-2010 SINA Corporation, All Rights Reserved 新浪公司 <a target="_blank" href="http://www.sina.com.cn/intro/copyright.shtml">版权所有</a></p>
+	  </div>  
+</div>
+ 
+<script type="text/javascript"> 
+function con_code() {
+	var qq = Math.round((Math.random()) * 100000000);
+	$("check_img").src = '/cgi/pin.php?r=' + qq;
+}
+onReady(function(){
+	var conf = (typeof $vconf == 'undefined') ? {} : $vconf;
+	var v = new Validator(conf);
+	v.init('vForm');
+});
+</script>
+<!--
+<script type="text/javascript">
+var defaultMailType = "cn";
+</script>
+<script type="text/javascript" charset="gb2312" src="/js/signup/mailtype_select.js"></script>
+-->
+</body>
+</html>
+

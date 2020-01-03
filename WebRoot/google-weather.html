@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> google weather api </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="zhengxinzhe">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style type="text/css">
+      body {font-family: arial,sans-serif;font-size: 12px; color: black} 
+	  .forecast{float:left; width:150;white-space:nowrap; }
+	  #inforMore{clear:both;}
+  </style>
+  <script src="/scripts/jquery.js"></script>
+ </HEAD>
+
+ <BODY>
+  <SCRIPT LANGUAGE="JavaScript">
+  <!--
+  var weathInfor="";
+	$(document).ready(function() {
+    $.post("http://www.google.com/ig/api?hl=zh-cn&weather=Beijing",function(xml){
+
+    weathInfor+="城市："+$(xml).find("forecast_information").children("postal_code").attr("data")+"<br>";
+	weathInfor+="日期："+$(xml).find("forecast_information").children("forecast_date").attr("data")+"<br>";
+	weathInfor+=" " +"<br>";
+	weathInfor+="天气："+$(xml).find("current_conditions").children("condition").attr("data")+"<br>";
+	weathInfor+="温度："+$(xml).find("current_conditions").children("temp_c").attr("data")+"<br>";
+	weathInfor+=""+$(xml).find("current_conditions").children("humidity").attr("data")+"<br>";
+	weathInfor+="<img src=\"http://www.google.com"+$(xml).find("current_conditions").children("icon").attr("data")+"\"><br>";
+	weathInfor+=" " +"<br>";
+	 
+
+
+    $(xml).find("forecast_conditions").each
+	(
+	function()
+		{
+			weathInfor+="<div class='forecast'> " +"<br>";
+			weathInfor+="日期："+$(this).children("day_of_week ").attr("data")+"<br>";
+			weathInfor+="低温："+$(this).children("low ").attr("data")+"<br>";
+			weathInfor+="高温："+$(this).children("high ").attr("data")+"<br>";
+			weathInfor+="天气："+$(this).children("condition ").attr("data")+"<br>";
+			weathInfor+="<img src=\"http://www.google.com"+$(this).children("icon ").attr("data")+"\"><br>";
+			weathInfor+=" " +"<br>";
+			weathInfor+="</div>";
+		
+		}
+	);
+
+
+	$("#infor").html(weathInfor);
+}
+)
+})
+
+  //-->
+  </SCRIPT>
+
+  <div id="infor"></div>
+  <div id="inforMore"><a href="http://www.admans.net/weather_cn.html" target="_blank">查看全国天气预报动画</a></div>
+ </BODY>
+</HTML>

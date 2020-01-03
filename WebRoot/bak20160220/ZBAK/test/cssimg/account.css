@@ -1,0 +1,150 @@
+.uservatar {
+	FLOAT: left
+}
+.uservatar {
+	FLOAT: left
+}
+.userinfo {
+	FLOAT: left
+}
+.userinfo UL LI {
+	FLOAT: left
+}
+.accountinfo2 LABEL {
+	FLOAT: left
+}
+.accountinfo2 INPUT {
+	FLOAT: left
+}
+.accountinfo2 UL LI B {
+	FLOAT: left
+}
+.accountinfo2 .btns {
+	FLOAT: left
+}
+.accountinfo2 {
+	CLEAR: both
+}
+.accountinfo2 UL LI {
+	CLEAR: both
+}
+.accountinfo2 LABEL {
+	DISPLAY: block; WIDTH: 100px; PADDING-TOP: 10px; TEXT-ALIGN: right
+}
+.accountinfo2 UL LI {
+	PADDING-TOP: 12px
+}
+.accountinfo2 UL LI EM {
+	DISPLAY: block; MARGIN: 10px 0px 0px 100px; COLOR: #999
+}
+.accountinfo2 UL LI P {
+	BORDER-RIGHT: #e6efd1 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #e6efd1 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; MARGIN: 5px 0px 10px 100px; BORDER-LEFT: #e6efd1 1px solid; WIDTH: 500px; PADDING-TOP: 5px; BORDER-BOTTOM: #e6efd1 1px solid; BACKGROUND-COLOR: #f7ffe6
+}
+.accountinfo2 UL LI P A {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; COLOR: #690! important; PADDING-TOP: 5px
+}
+.accountinfo2 UL LI B {
+	MARGIN-TOP: 8px; FONT: 700 14px/16px Verdana, Geneva, sans-serif,""
+}
+.accountinfo2 SELECT {
+	MARGIN-TOP: 8px; FONT-SIZE: 12px
+}
+.accountinfo2 .btn05 {
+	MARGIN-LEFT: 50px
+}
+.accountinfo2 .btn02 {
+	MARGIN-LEFT: 10px
+}
+#AccountInformationchanges H2 {
+	PADDING-RIGHT: 18px; PADDING-LEFT: 18px; BACKGROUND: url(/cssimg/accountbg.gif) no-repeat 0px -133px; PADDING-BOTTOM: 0px; FONT: 400 14px/38px Verdana, Geneva, sans-serif,""; COLOR: #390; PADDING-TOP: 0px
+}
+#AccountInformationchanges H2 B {
+	COLOR: #333
+}
+#AccountInformationchanges .accountinfo2 UL LI {
+	PADDING-TOP: 6px
+}
+.space1 {
+	PADDING-TOP: 20px
+}
+.space2 {
+	MARGIN-TOP: 15px
+}
+.space3 {
+	MARGIN-TOP: 10px
+}
+.Passwordchanges {
+	BACKGROUND: url(/cssimg/accountbg.gif) no-repeat 0px -191px; HEIGHT: 194px
+}
+.ReplacementHead {
+	BACKGROUND: url(/cssimg/accountbg.gif) no-repeat 0px -191px; HEIGHT: 194px
+}
+.Passwordchanges UL {
+	PADDING-TOP: 10px
+}
+INPUT.Error {
+	BORDER-RIGHT: #f00 2px solid; BORDER-TOP: #f00 2px solid; BORDER-LEFT: #f00 2px solid; BORDER-BOTTOM: #f00 2px solid
+}
+.Errortext {
+	COLOR: #f00; LINE-HEIGHT: 36px
+}
+.ReplacementHead UL {
+	CLEAR: both; BORDER-TOP: #999 1px dotted; MARGIN: -10px 20px 0px 97px; PADDING-TOP: 15px
+}
+.ReplacementHead LI {
+	PADDING-BOTTOM: 6px; COLOR: #999
+}
+.ReplacementHead .btns08 {
+	DISPLAY: block; FLOAT: left
+}
+.ReplacementHead INPUT {
+	DISPLAY: block; FLOAT: left
+}
+.file1 {
+	DISPLAY: block; FLOAT: left
+}
+.line {
+	DISPLAY: block; FLOAT: left
+}
+.line SPAN {
+	DISPLAY: block; FLOAT: left
+}
+.line {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 15px; PADDING-LEFT: 0px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px; POSITION: relative
+}
+.file {
+	DISPLAY: none; FILTER: alpha(opacity=0); LEFT: 90px; POSITION: absolute; TOP: 23px; opacity: 0
+}
+.file1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; Z-INDEX: 1; BACKGROUND: url(/cssimg/btns.gif) no-repeat -164px -12px; PADDING-BOTTOM: 10px; VERTICAL-ALIGN: middle; WIDTH: 59px; CURSOR: pointer; PADDING-TOP: 8px
+}
+.inputstyle {
+	BORDER-RIGHT: #888 1px solid; BORDER-TOP: #888 1px solid; FONT-SIZE: 14px; Z-INDEX: 99; BORDER-LEFT: #888 1px solid; WIDTH: 300px; BORDER-BOTTOM: #888 1px solid
+}
+.ReplacementHead .line LABEL {
+	FONT: 400 14px/18px ""; CURSOR: pointer; COLOR: #333
+}
+.ReplacementHead SPAN LABEL {
+	DISPLAY: block
+}
+.ReplacementHead .line INPUT {
+	MARGIN-TOP: 8px
+}
+.file1 {
+	MARGIN-TOP: 26px; FONT-SIZE: 14px; COLOR: #fff! important
+}
+.ReplacementHead .btns08 {
+	MARGIN-TOP: 26px; FONT-SIZE: 14px; COLOR: #fff! important
+}
+.ReplacementHead .btns08 {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BACKGROUND: url(/cssimg/btns.gif) no-repeat -778px -12px; PADDING-BOTTOM: 10px; LINE-HEIGHT: 17px; PADDING-TOP: 7px
+}
+.ReplacementHead .btns08:hover {
+	BACKGROUND-POSITION: -778px -48px
+}
+.ReplacementHead SPAN INPUT {
+	BORDER-RIGHT: #b5c7d0 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #b5c7d0 1px solid; PADDING-LEFT: 6px; BACKGROUND: url(/cssimg/Formsbg.gif) no-repeat left top; PADDING-BOTTOM: 0px; FONT: 700 14px/28px Verdana,Geneva,sans-serif; BORDER-LEFT: #b5c7d0 1px solid; PADDING-TOP: 6px; BORDER-BOTTOM: #b5c7d0 1px solid; HEIGHT: 21px! important
+}
+.ReplacementHead INPUT.file {
+	HEIGHT: 27px! important
+}

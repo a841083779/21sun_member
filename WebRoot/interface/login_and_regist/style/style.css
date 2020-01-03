@@ -1,0 +1,307 @@
+@charset "utf-8";
+/*去除页面中所有标签的默认间距、补白*/
+* { margin:0px; padding:0px;}
+/*页面中的默认字体、字体大小、背景、文字颜色*/
+body { font-size:11px; font-family:Arial; color:#222222; background:#ffffff;}
+/*页面右侧滚动条*/
+
+/*清除页面所有图片的默认边框*/
+img { border:none;}
+/*去除ol、ul、li的默认样式*/
+ol,ul,li { list-style-type:none;}
+/*设置表单等项目的默认字体大小*/
+input,select,textarea { font-size:12px;}
+/*设置文字段落、表格单元格的默认行高*/
+p,th,td { line-height:22px;}
+em { font-style:normal;}
+/*字体*/
+.yahei { font-family:微软雅黑;}
+.songti { font-family:宋体;}
+/* 其它需要用到的字体大小 */
+h1,h2,h3,h4,h5,h6 { font-weight:normal; font-size:11px;}
+h1{ font-size:14px;}
+h2{ font-size:11px;}
+h3{ font-size:11px;}
+.font10 { font-size: 10px;}
+.font11 { font-size: 11px;}
+.font12 { font-size: 12px;}
+.font13 { font-size: 13px;}
+.font14 { font-size: 14px;}
+.font15 { font-size: 15px;}
+.font16 { font-size: 16px;}
+/*去除页面中的链接点击后留下的虚线框*/
+body a{ outline:none;blr:expression(this.onFocus=this.blur());}
+/* 整个网站需要的字体样式*/
+.strong { font-weight:bold;}
+.underline { text-decoration:underline;}
+/* 图片边框 */
+.imgp2 img { padding: 2px; border: 1px solid #cccccc; }
+/* 1px细线 */
+.div1px { border:#CCCCCC solid 1px; }
+/* li相关 */
+ul,li { list-style-type:none; }
+/* 带着图片的li */
+.imgli1 li{ list-style-image:url(../BG.jpg) ; }
+/*默认的文字链接样式*/
+a:link,a:visited { color:#000000; text-decoration:none;}
+a:hover,a:active { color:#000000; text-decoration:none;}
+
+/*其他文字链接样式*/
+.white { color:#ffffff;}
+.white a:link,.white a:visited { color:#ffffff;}
+.white a:hover,.white a:active { color:#ffffff;}
+
+/* w系列控制宽度 */
+.wauto { width: auto}
+.w25 { width: 25%;}
+.w33 { width: 33.3%;}
+.w50 { width: 50%;}
+.w100 { width: 100%;}
+
+.w85px { width:85px;}
+.w100px { width:100px;}
+.w170px { width:170px;}
+.w180px { width:180px;}
+.w182px { width:182px;}
+.w120px { width:120px;}
+.w200px { width:200px;}
+.w300px { width:300px;}
+.w310px { width:310px;}
+.w327px { width:327px;}
+.w395px { width:395px;}
+.w400px { width:400px;}
+.w632px { width:632px;}
+.w634px { width:634px;}
+.w753px { width:753px;}
+.w760px { width:760px;}
+.w950px { width:950px;}
+.w960px { width:960px;}
+.w970px { width:970px;}
+.w972px { width:972px;}
+.w980px { width:980px;}
+.w1000px { width:1000px;}
+.w1344px { width:1344px;}
+
+/* h系列控制高度 */
+.h100 { height:100%;}
+.hauto { height:auto;}
+
+.h20px { height:20px;}
+.h30px { height:30px;}
+.h40px { height:40px;}
+.h50px { height:50px;}
+.h100px { height:100px;}
+.h136px { height:136px;}
+.h150px { height:150px;}
+
+.lineheight100 { line-height:100%;}
+.lineheight120 { line-height:120%;}
+.lineheight150 { line-height:150%;}
+.lineheight180 { line-height:180%;}
+.lineheight200 { line-height:200%;}
+.lineheight250 { line-height:250%;}
+
+.lineheight15px { line-height:15px;}
+.lineheight20px { line-height:20px;}
+.lineheight24px { line-height:24px;}
+.lineheight30px { line-height:30px;}
+.lineheight32px { line-height:32px;}
+.lineheight40px { line-height:40px;}
+
+/* --bg系列控制背景图片，自行添加，前面的px控制左右相对位置，后面的控制上下相对位置-- */
+.whitebg { background-color:#ffffff;}
+.bluebg { background-color:#728da3;}
+.greybg { background-color:#f3f3f3;}
+.light_bluebg { background-color:#d8dde3;}
+
+/* p系列控制padding */
+.p5 { padding:5px;}
+.p10 { padding:10px;}
+.p15 { padding:15px;}
+.p20 { padding:20px;}
+.p25 { padding:25px;}
+.p30 { padding:30px;}
+
+.pt5 { padding-top:5px;}
+.pt10 { padding-top:10px;}
+.pt15 { padding-top:15px;}
+.pt20 { padding-top:20px;}
+.pt25 { padding-top:25px;}
+.pt30 { padding-top:30px;}
+
+.pr5 { padding-right:5px;}
+.pr10 { padding-right:10px;}
+.pr15 { padding-right:15px;}
+.pr20 { padding-right:20px;}
+.pr25 { padding-right:25px;}
+.pr30 { padding-right:30px;}
+
+.pb5 { padding-bottom:5px;}
+.pb10 { padding-bottom:10px;}
+.pb15 { padding-bottom:15px;}
+.pb20 { padding-bottom:20px;}
+.pb25 { padding-bottom:25px;}
+.pb30 { padding-bottom:30px;}
+
+.pl5 { padding-left:5px;}
+.pl10 { padding-left:10px;}
+.pl15 { padding-left:15px;}
+.pl20 { padding-left:20px;}
+.pl25 { padding-left:25px;}
+.pl30 { padding-left:30px;}
+
+/* m系列控制padding */
+.m5 { margin:5px!important;}
+.m10 { margin:10px!important;}
+.m15 { margin:15px!important;}
+.m20 { margin:20px!important;}
+.m25 { margin:25px!important;}
+.m30 { margin:30px!important;}
+
+.mt5 { margin-top:5px!important;}
+.mt10 { margin-top:10px!important;}
+.mt15 { margin-top:15px!important;}
+.mt20 { margin-top:20px!important;}
+.mt25 { margin-top:25px!important;}
+.mt30 { margin-top:30px!important;}
+
+.mr5 { margin-right:5px!important;}
+.mr10 { margin-right:10px!important;}
+.mr15 { margin-right:15px!important;}
+.mr20 { margin-right:20px!important;}
+.mr25 { margin-right:25px!important;}
+.mr30 { margin-right:30px!important;}
+
+.mb5 { margin-bottom:5px!important;}
+.mb10 { margin-bottom:10px!important;}
+.mb15 { margin-bottom:15px!important;}
+.mb20 { margin-bottom:20px!important;}
+.mb25 { margin-bottom:25px!important;}
+.mb30 { margin-bottom:30px!important;}
+
+.ml5 { margin-left:5px!important;}
+.ml10 { margin-left:10px!important;}
+.ml15 { margin-left:15px!important;}
+.ml20 { margin-left:20px!important;}
+.ml25 { margin-left:25px!important;}
+.ml30 { margin-left:30px!important;}
+
+/* 其他常用元素 */
+/*文本对齐样式*/
+.center { margin:0px auto;}
+.tcenter { text-align:center;}
+.tleft { text-align:left;}
+.tright { text-align:right;}
+/*左右漂浮样式*/
+.l { float:left;}
+.r { float:right;}
+/*css清除浮动*/
+.c { clear:both}
+.clear { clear:both; height:0px; line-height:0px; font-size:0px;}
+/*clearfix:after*/
+.clearfix:after { content:"."; display:block; height:0px; clear:both; visibility:hidden;}
+.clearfix { display:inline-table; display:block;}
+*html .clearfix { height:1%;}
+*+html .clearfix { height:1%;}
+.imgfix img{display:block;}
+/* 1px细线 */
+.b1s { border:1px solid #CCCCCC;}
+.bt1s { border-top:1px solid #CCCCCC;}
+.br1s { border-right:1px solid #CCCCCC;}
+.bb1s { border-bottom:1px solid #CCCCCC;}
+.bl1s { border-left:1px solid #CCCCCC;}
+/*添加鼠标悬浮显示手的形状*/
+.hand { cursor:pointer;}
+/*单行截字*/
+.textbreak { white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+/*最小高度*/
+.minheight500px { min-height:500px; height:auto!important; height:500px; overflow:visible;}
+/*隐藏元素*/
+.hide {	display:none;}
+/*解决IE6双边距加倍错误*/
+.inline { _display:inline;}
+
+
+/* 页面其他用到样式
+-------------------------------------------------------------- */
+
+
+/*新登录*/
+.ggBtn { display:none; position:fixed; right:0px; top:300px; z-index:999;}
+.ggBtn img { cursor:pointer;}
+.C_coverbg { display:none; position:fixed; width:100%; height:100%; left:0px; top:0px; background-color:#000; filter:alpha(opacity=35); opacity:0.35; z-index:1000;}
+.C_layer { display:block; width:450px; height:auto; background-color:#fff; border:none; font-size:12px; /*position:fixed; left:50%; top:50%; margin-left:-225px; margin-top:-141px; z-index:1001;*/}
+.C_layer .C_title { width:100%; height:35px; line-height:35px; border-bottom:#f2f2f2 1px solid; margin-bottom:15px; background-color:#FCFCFC;}
+.C_layer .C_title h2 { width:auto; float:left; font-size:16px; padding-left:20px;}
+.C_layer .C_title a.close { width:14px; height:13px; float:right; margin:10px 10px 0px 0px; _display:inline; background:url(../images/c_login.gif) repeat scroll 0 -161px transparent; cursor:pointer;}
+.C_layer .C_title a.close:hover { background-position:-19px -161px;}
+.C_layer .C_content { width:380px; height:auto; /*overflow-x:hidden; overflow-y:auto;*/ word-break:break-all; line-height:24px; color:#000; margin:0 auto; clear:both; padding-bottom:20px;}
+.C_content .C_tip { width:332px; height:30px; border:#fff0c1 1px solid; margin:0px auto 10px; background-color:#fffce7; color:#da1111;}
+.C_content .C_tip em { display:inline-block; width:27px; height:30px; background:url(../images/c_login.gif) -284px -174px no-repeat; vertical-align:middle; margin-right:13px;}
+
+table.C_loginForm { width:352px; margin:0 auto; clear:both;}
+table.C_loginForm td,table.C_loginForm th { padding:7px;}
+table.C_loginForm th { font-weight:normal; text-align:right;}
+
+.C_login_input_username, .C_login_input_password, .C_login_input_verifycode, .C_login_input_phoneNumber { width:270px; height:20px; line-height:20px; border:1px solid #ccc; color:#333; background:url(../images/c_login.gif) repeat-x 0 -117px; padding:5px 6px; vertical-align:middle; outline:none }
+.C_login_label_username, .C_login_label_password, .C_login_label_phoneNumber { vertical-align:middle; padding:0 9px 0 20px }/*验证label*/
+.C_login_label_verifycode { padding:0 9px 0 20px }/*验证input*/
+.C_login_input_verifycode { width:93px }/*记住我的登录状态p*/
+.C_login_p_rem { font-size:13px; clear:both }/*使用公用电脑请勿选择该项p*/
+.C_login_p_des { display:none }/*记住我的登录状态label*/
+.C_login_label_rem { vertical-align:middle; margin-left:5px }/*记住我的登录状态input*/
+.C_login_input_rem { color:#666; vertical-align:middle }/*忘记密码*/
+.C_login_a_fgtpwd { font-size:12px; margin-left:18px }/*验证码*/
+.C_login_p_img_verifycode, .C_login_p_verifycode { height:39px; *height:47px;
+display:inline-block; vertical-align:middle; float:left }/*看不清*/
+.C_login_change_verifycode { font-size:13px; color:#00c; text-decoration:underline; margin-left:10px; cursor:pointer }
+.C_login_verifycode { width:75px; height:30px; vertical-align:middle; margin-left:10px; border:1px solid #ccc }/*登录*/
+.C_login_p_btn { height:51px;}/*登录button*/
+.C_login_input_submit { width:97px; height:34px; color:#fff; background:url(../images/c_login.gif); border:none; vertical-align:middle; cursor:pointer;}
+.C_login_input_submit_hover { background-position:0 -39px }
+.C_login_input_submit_down { background-position:0 -78px }/*隐藏pass自带的提示*/
+.C_login_err { display:none }
+#C_login_p_generalerror_0, #C_login_p_generalerror_1 { display:none }
+.login_input_hover { border:1px solid #ababab }
+.login_input_focus { border:1px solid #387BC9 }
+.login_input_err { border:1px solid #da1111 }
+.C_reg_p_img_verifycode { width:145px; float:left; overflow:hidden;}
+.C_reg_p_img_verifycode img.pass_reg_verifycode { border:1px solid #DDDDDD; height:30px; margin-left:0; vertical-align:middle; width:90px;}
+.C_reg_p_img_verifycode span.pass_reg_change_verifycode { color:#0000CC; cursor:pointer; margin-left:5px; text-decoration:underline;}
+
+.reg_holder { color:#676767; font-size:12px; padding:13px 0 0 71px;}
+.reg_holder a { color:#0033CC!important; text-decoration:underline; margin-left:6px;}
+.reg_line { background:url(../images/c_login.gif) repeat-x scroll 0 -155px transparent; height:1px; overflow:hidden;}
+
+/*新登录结束*/
+
+/*新注册*/
+.registTable { width:580px; margin:0 auto; padding-top:20px; clear:both; padding-bottom:30px;}
+.registTable table { margin-bottom:20px;}
+.registTable table th { font-weight:normal; text-align:right; font-size:14px; padding:11px 10px; vertical-align:top;}
+.registTable table th font { color:red;}
+.registTable table td { padding:11px 0px;}
+
+.ri { width:242px; padding-left:5px; float:left; height:23px; line-height:23px; border-bottom:#e0e0e0 1px solid; border-right:#e0e0e0 1px solid; border-top:#848484 1px solid; border-left:#848484 1px solid; font-size:14px;}
+.cuo{float:left;margin:0;height:17px;border:0;background:url(../images/botton.gif) 106px -12px;width:17px;margin-right:10px;margin-left:10px;display:inline; margin-top:6px;}
+.cuo1{float:left;margin:0;height:20px;border:0;line-height:20px;width:auto;color:#ff6600; margin-top:4px;}
+.regi { width:246px; height:24px; line-height:24px; border:#ffcc66 1px solid; float:left;}
+.regiHover { width:246px; height:24px; line-height:24px; border:#ffcc66 1px solid; float:left;}
+
+.qr{ float:left; width:150px;broder:1px solid #ddd;height:25px;margin-left:10px;display:inline;}
+.qr li{ float:left; width:50px;broder:1px solid #ddd;background:url(../images/gray.gif) no-repeat;text-align:center;padding-top:10px;}
+.qr li.show{ float:left; width:50px;background:url(../images/huang.gif) no-repeat;text-align:center;color:#000;font-weight:bold;}
+
+.registBtn { width:169px; height:30px; border:none; background:url(../images/regist_btn.gif) no-repeat; cursor:pointer; font-size:14px; font-family:宋体; font-weight:bold; color:#fff;}
+.xieyi { width:570px; height:120px; overflow-y:scroll; margin:0 auto; border:#cccccc 1px solid;}
+
+.registNew { width:666px;}
+.registNew .C_content { width:580px;}
+
+
+
+
+
+
+
+

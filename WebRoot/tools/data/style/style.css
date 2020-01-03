@@ -1,0 +1,56 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+* { margin:0; padding:0;}
+body { font-size:12px; font-family:Arial; background:#ffffff; color:#1c1c1c;}
+
+/*html { overflow-y:scroll;}*/
+
+img { border:0;}
+
+ul,li { list-style-type:none; line-height:22px;}
+font,input,select,textarea { font-size:12px;}
+p { color:#505050; line-height:22px; font-size:12px;}
+th,td { font-size:12px; line-height:22px;} 
+
+.clear { clear:both; font-size:1px; line-height:0px;}
+
+/*CSS清除浮动 clearfix:after*/
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix {display: inline-table; display: block;}
+/* Hides from IE-mac \*/
+*html .clearfix {height: 1%;}
+*+html .clearfix {height: 1%;}
+/* End hide from IE-mac */
+
+a:link { color: #333333; text-decoration: none;}
+a:visited { color: #333333; text-decoration: none;}
+a:hover { color: #FF6600; text-decoration: none; }
+body a{ outline:none;blr:expression(this.onFocus=this.blur());}
+
+.blue a:link,.blue a:visited { color:#2d7ac7; text-decoration:underline}
+.blue a:hover { color:#333333;} 
+
+.activebg1{ width:594px; margin:0 auto; padding:0px 0px; border:3px solid #c2ddf6;}
+.activebg2{ width:592px; border:1px solid #8bbfee;}
+.acbanner{ width:592px; height:72px; line-height:0px; font-size:1px;}
+.acmain{ width:592px; background:#ffffff url(../images/acbg.jpg) left top no-repeat;}
+.ac_cont{ width:518px; margin-left:38px; padding-top:34px; padding-bottom:60px;}
+.ac_hang1{ width:100%; height:30px; line-height:30px; padding-bottom:3px; text-align:left; font-family:"宋体"; font-size:14px;}
+.ac_hang2{ width:100%; height:24px; line-height:24px;}
+.ac_hang2 span{ width:auto; padding-right:20px;}
+.ac_hang2 span font{ width:auto; height:15px; line-height:14px; padding:0px 6px; background:#0c6fd9; display:inline-block; color:#ffffff;}
+.ac_hang3{ width:100%; height:22px; line-height:22px; padding-top:30px;}
+.ac_hang4{ width:470px; line-height:22px; word-break:break-all }
+.ac_hang5{ width:100%; height:30px; line-height:30px; border-bottom:1px dotted #2b2b2b; padding-top:25px; padding-bottom:15px; color:#505050;}
+.ac_hang6{ width:100%; line-height:22px; color:#505050; padding-top:25px;}
+
+/*登录框样式*/
+.loginbg{ width:360px; height:228px; background:url(../images/loginbg.jpg) center top no-repeat; margin:0 auto; padding:0px 0px;}
+.login_cont{ width:360px; padding-top:80px;}
+.login_h1{ width:280px; height:32px; margin-left:80px;}
+.h1_left{ width:53px; float:left; color:#454545; font-size:13px; font-family:"微软雅黑";}
+.h1_right{ width:180px; float:left; height:22px;}
+.h1_right input{ width:180px; height:22px; line-height:22px; background:url(../images/input.jpg) left top no-repeat; border:none;}
+.login_h2{ width:122px; height:24px; float:right; margin-right:46px; padding-top:5px; display:inline;}
+.login_h2 input{ width:122px; height:24px; background:url(../images/btn.jpg) no-repeat; border:none; cursor:pointer;}

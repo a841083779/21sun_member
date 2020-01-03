@@ -1,0 +1,237 @@
+A:link {
+	COLOR: #090980; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #ff8000; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #090980; TEXT-DECORATION: underline
+}
+A.black:link {
+	COLOR: black; TEXT-DECORATION: underline
+}
+A.black:hover {
+	COLOR: #ff8000; TEXT-DECORATION: underline
+}
+A.black:visited {
+	COLOR: black; TEXT-DECORATION: underline
+}
+A.1:link {
+	COLOR: white; TEXT-DECORATION: none
+}
+A.1:hover {
+	COLOR: white; TEXT-DECORATION: none
+}
+A.1:visited {
+	COLOR: white; TEXT-DECORATION: none
+}
+A.b:link {
+	COLOR: black; TEXT-DECORATION: none
+}
+A.b:hover {
+	COLOR: black; TEXT-DECORATION: none
+}
+A.b:visited {
+	COLOR: black; TEXT-DECORATION: none
+}
+A.2:link {
+	COLOR: #ff6600; TEXT-DECORATION: none
+}
+A.2:hover {
+	COLOR: #ff6600; TEXT-DECORATION: none
+}
+A.2:visited {
+	COLOR: #ff6600; TEXT-DECORATION: none
+}
+A.a {
+	TEXT-DECORATION: underline
+}
+A.a:link {
+	FILTER: progid:DXImageTransform.Microsoft.Glow(color=ffffff,strength=3); WIDTH: 100%; COLOR: #ff0000
+}
+A.a:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.a:visited {
+	FILTER: progid:DXImageTransform.Microsoft.Glow(color=ffffff,strength=3); WIDTH: 100%; COLOR: #ff0000
+}
+A.c {
+	TEXT-DECORATION: underline
+}
+A.c:link {
+	COLOR: black
+}
+A.c:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.c:visited {
+	COLOR: black
+}
+A.d:link {
+	COLOR: gray; TEXT-DECORATION: none
+}
+A.d:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.d:visited {
+	COLOR: gray; TEXT-DECORATION: none
+}
+A.3:link {
+	FONT-SIZE: 14px; COLOR: #090980; LINE-HEIGHT: 19px; TEXT-DECORATION: underline
+}
+A.3:hover {
+	FONT-SIZE: 14px; COLOR: #ff8000; LINE-HEIGHT: 19px; TEXT-DECORATION: underline
+}
+A.3:visited {
+	FONT-SIZE: 14px; COLOR: #090980; LINE-HEIGHT: 19px; TEXT-DECORATION: underline
+}
+A.4:link {
+	FONT-SIZE: 14px; COLOR: #090980; LINE-HEIGHT: 25px; TEXT-DECORATION: underline
+}
+A.4:hover {
+	FONT-SIZE: 14px; COLOR: #ff8000; LINE-HEIGHT: 25px; TEXT-DECORATION: underline
+}
+A.4:visited {
+	FONT-SIZE: 14px; COLOR: #090980; LINE-HEIGHT: 25px; TEXT-DECORATION: underline
+}
+A.5:link {
+	FONT-SIZE: 12px; COLOR: black; LINE-HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.5:hover {
+	FONT-SIZE: 12px; COLOR: red; LINE-HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.5:visited {
+	FONT-SIZE: 12px; COLOR: black; LINE-HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.6:link {
+	COLOR: white; TEXT-DECORATION: none
+}
+A.6:hover {
+	COLOR: #ffcc00; TEXT-DECORATION: none
+}
+A.6:visited {
+	COLOR: white; TEXT-DECORATION: none
+}
+A.7:link {
+	COLOR: black; TEXT-DECORATION: none
+}
+A.7:hover {
+	COLOR: #090980; TEXT-DECORATION: none
+}
+A.7:visited {
+	COLOR: black; TEXT-DECORATION: none
+}
+A.8:link {
+	COLOR: white; TEXT-DECORATION: none
+}
+A.8:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.8:visited {
+	COLOR: white; TEXT-DECORATION: none
+}
+A.9:link {
+	COLOR: black; TEXT-DECORATION: none
+}
+A.9:hover {
+	COLOR: #de0000; TEXT-DECORATION: none
+}
+A.9:visited {
+	COLOR: black; TEXT-DECORATION: none
+}
+.HEAD2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FILTER: progid:DXImageTransform.Microsoft.Glow(color=000000,strength=2); WIDTH: 90%; COLOR: #fff; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.HEAD1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FILTER: progid:DXImageTransform.Microsoft.Glow(color=000000,strength=2); WIDTH: 90%; COLOR: #fff; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.HEAD {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FILTER: progid:DXImageTransform.Microsoft.Glow(color=ffffff,strength=3); WIDTH: 100%; COLOR: #000; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.HEAD3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FILTER: progid:DXImageTransform.Microsoft.Glow(color=ffffff,strength=3); WIDTH: 100%; COLOR: #000; LINE-HEIGHT: 20px; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.clubwd {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FILTER: progid:DXImageTransform.Microsoft.Glow(color=FFFFFF,strength=2); WIDTH: 100%; LINE-HEIGHT: normal; FONT-STYLE: normal; TEXT-ALIGN: center; FONT-VARIANT: normal
+}
+.clubwd1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FILTER: progid:DXImageTransform.Microsoft.Glow(color=FFFFFF,strength=2); LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.clubwd2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FILTER: progid:DXImageTransform.Microsoft.Glow(color=FFFFFF,strength=2); WIDTH: 100%; LINE-HEIGHT: normal; FONT-STYLE: normal; TEXT-ALIGN: left; FONT-VARIANT: normal
+}
+.main {
+	FONT-SIZE: 15px; LINE-HEIGHT: 18px
+}
+.big {
+	FONT-SIZE: 14px; LINE-HEIGHT: 27px
+}
+.big11 {
+	FONT-SIZE: 14px; COLOR: #090980; LINE-HEIGHT: 28px
+}
+.big22 {
+	FONT-SIZE: 14px; LINE-HEIGHT: 22px
+}
+.big14 {
+	FONT-SIZE: 14px; COLOR: #ff8000; LINE-HEIGHT: 23px
+}
+.p9090980 {
+	FONT-SIZE: 12px; COLOR: #090980; LINE-HEIGHT: 20px
+}
+.pbig {
+	FONT-SIZE: 12px; COLOR: #090980; LINE-HEIGHT: 22px
+}
+.p9red {
+	FONT-SIZE: 12px; COLOR: red; LINE-HEIGHT: 18px
+}
+.p92 {
+	FONT-SIZE: 12px; COLOR: black; LINE-HEIGHT: 20px
+}
+.p922 {
+	FONT-SIZE: 12px; COLOR: black; LINE-HEIGHT: 18px; TEXT-DECORATION: none
+}
+.p93 {
+	FONT-SIZE: 14px; COLOR: black; LINE-HEIGHT: 20px
+}
+.p921 {
+	FONT-SIZE: 12px; COLOR: black; LINE-HEIGHT: 17px
+}
+.pwhite {
+	FONT-SIZE: 12px; COLOR: white; LINE-HEIGHT: 17px
+}
+.p9105 {
+	FONT-SIZE: 12px; COLOR: #090980; LINE-HEIGHT: 21px
+}
+.pyellow {
+	FONT-SIZE: 12px; COLOR: #fd6b32; LINE-HEIGHT: 15px
+}
+.p660066 {
+	FONT-SIZE: 12px; COLOR: #660066; LINE-HEIGHT: 15px
+}
+INPUT {
+	FONT-SIZE: 12px; COLOR: #090980; LINE-HEIGHT: 16px
+}
+TEXTAREA {
+	FONT-SIZE: 12px; COLOR: #090980; LINE-HEIGHT: 16px
+}
+.psmall {
+	FONT-SIZE: 12px; COLOR: white; LINE-HEIGHT: 14px
+}
+.A02F67 {
+	FONT-SIZE: 12px; COLOR: #a02f67; LINE-HEIGHT: 20px
+}
+.969696 {
+	FONT-SIZE: 12px; COLOR: #969696; LINE-HEIGHT: 19px
+}
+.r1 {
+	Z-INDEX: 100; RIGHT: 20px; FLOAT: right; WIDTH: 100px; POSITION: absolute; TOP: 300px; ; TOP: expression(offsetParent.scrollTop+300); HEIGHT: 215px
+}
+.r2 {
+	Z-INDEX: 400; RIGHT: 20px; FLOAT: right; WIDTH: 100px; POSITION: absolute; TOP: 400px; ; TOP: expression(offsetParent.scrollTop+400); HEIGHT: 80px
+}
+.l1 {
+	Z-INDEX: 300; LEFT: 20px; FLOAT: right; WIDTH: 100px; POSITION: absolute; TOP: 300px; ; TOP: expression(offsetParent.scrollTop+300); HEIGHT: 215px
+}
+.l2 {
+	Z-INDEX: 400; LEFT: 20px; FLOAT: right; WIDTH: 100px; POSITION: absolute; TOP: 400px; ; TOP: expression(offsetParent.scrollTop+400); HEIGHT: 80px
+}

@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>lhgdialog - 弹出窗口组件示例页</title>
+	<script type="text/javascript" src="lhgcore.js"></script>
+	<script type="text/javascript" src="lhgdialog.js"></script>
+	<style type="text/css">
+body{margin:0;padding:0;font:14px Verdana, Arial, sans-serif;line-height:200%;}
+#content{padding-left:50px;padding-right:50px;}
+#content h2{font-size:18px;color:#1E9300;padding-top:8px;margin-bottom:8px;}
+#content h3{margin-top:8px;margin-bottom:8px;FONT:bold 14px 宋体,tahoma,arial,sans-serif;COLOR:#0033CC;}
+#content div{border:#666 solid 1px;padding-left:10px;}
+#content span{color:#f00;font-weight:bold;}
+ul, ol{color:#000000;}
+	</style>
+	<script type="text/javascript">
+function dlgopen1()
+{
+	J.dialog.get({ id: 'test1',  title: '测试窗口', page: '_content/content.html' });
+}
+function dlgopen2()
+{
+    J.dialog.get({ id: 'test2', title: '测试窗口', page: '_content/content.html', cover: true });
+}
+function dlgopen3()
+{
+    J.dialog.get({ id: 'test3', title: '测试窗口', width: 500, link: 'http://www.google.com' });
+}
+function dlgopen4()
+{
+    J.dialog.get({ id: 'test4', title: '测试窗口', html: '<p align="center" style="font-size:13px">lhgcore框架之lhgdialog弹出窗口组件。</p>' });
+}
+function dlgopen5()
+{
+    J.dialog.get({ id: 'test5', title: '测试窗口', page: '_content/content.html', top: 100, left: 100 });
+}
+function dlgopen6()
+{
+    J.dialog.get({ id: 'test6', title: '测试窗口', page: '_content/content1.html' });
+}
+function dlgopen7()
+{
+    J.dialog.get({ id: 'test7',  title: '测试窗口', page: '_content/content.html' });
+}
+function closdlg()
+{
+    J.dialog.close('test7'); //为打开窗口的id
+}
+function dlgopen8()
+{
+    J.dialog.get({ id: 'test8', title: '测试窗口', page: '_content/content3.html' });
+}
+function todlgval()
+{
+    // J.dialog.infrm['test8'].contentWindow.document 为弹出的id为test8的窗口的内容页（也就是content3.html）的document对象。
+	J( 'ctxt1', J.dialog.infrm['test8'].contentWindow.document ).val( J('#txt1').value );
+}
+function dlgtoval()
+{
+    // J.dialog.infrm['test8'].contentWindow.document 为弹出的id为test8的窗口的内容页（也就是content3.html）的document对象。
+	J('#txt1').value = J( 'ctxt1', J.dialog.infrm['test8'].contentWindow.document ).val();
+}
+function dlgopen9()
+{
+    J.dialog.get({ id: 'test9', title: '测试窗口', page: '_content/content4.html' });
+}
+function dlgopen10()
+{
+    J.dialog.get({ id: 'test10', title: '测试窗口', page: '_content/content5.html' });
+}
+function dlgopen11()
+{
+    J.dialog.get({ id: 'test11', title: '测试窗口', page: '_content/content7.html' });
+}
+function tochild()
+{
+    //child2为子窗口id，txt2为子窗口中文本框id
+	J( 'txt2', J.dialog.infrm['child2'].contentWindow.document ).val( J('#txt4').value );
+}
+function dlgopen12()
+{
+    J.dialog.get({ id: 'test12', title: '测试窗口', page: '_content/content9.html', cover: true });
+}
+function dlgopen13()
+{
+    J.dialog.get({ id: 'test13', page: '_content/content.html', rang: true });
+}
+function dlgopen14()
+{
+    J.dialog.get({ id: 'test14', page: '_content/content0.html', rang: true, custom: 'lhgcore' });
+}
+function dlgopen15()
+{
+    J.dialog.get({ id: 'test15', page: '_content/content10.html', rang: true, custom: function(){ alert('这是传过来的自定义函数运行后的结果：lhgcore'); } });
+}
+function dlgopen16()
+{
+    J.dialog.get({ id: 'test16', page: '_content/content.html', nodrag: true, noresize: true });
+}
+function dlgopen17()
+{
+    //J.dialog.get({ id: 'test17', page: '_content/content.html', nofoot: true });
+	J.dialog.get({ id: 'test17', page: '/culture/test.html', nofoot: true });
+}
+function dlgopen18()
+{
+    J.dialog.get({ id: 'test18', page: '_content/content11.html' });
+}
+// 下面这3个函数里的id参数为你主调函数get里设置的id的值。
+// J.dialog.indoc['id'] : 这个是窗口的document对象
+// J.dialog.inwin['id'] : 这个是窗口的window对象
+function dlgopen19()
+{
+    // cbtn为窗口取消按钮的id
+	J.dialog.get({ id: 'test19', html: '<h2 align="center">lhgdialog弹出窗口组件</h2>', custom: function(){ J('cbtn',J.dialog.indoc['test19']).html('<span>更 改</span>'); } });
+}
+function dlgopen20()
+{
+    var cusfn = function()
+	{
+	    // xbtn为窗口上面X关闭按钮的id
+		J('xbtn',J.dialog.indoc['test20']).click( function(){ alert('这是更改了的事件，不再关闭窗口了。'); });
+	};
+	J.dialog.get({ id: 'test20', html: '<h2 align="center">lhgdialog弹出窗口组件</h2>', custom: cusfn });
+}
+function dlgopen21()
+{
+    var cusfnc = function()
+	{
+	    //确定按钮调用的也是窗口的关闭函数
+		J.dialog.inwin['test21'].crebtn( 'ok', '确 定', J.dialog.inwin['test21'].cancel );
+	}
+	J.dialog.get({ id: 'test21', html: '<h2 align="center">lhgdialog弹出窗口组件</h2>', custom: cusfnc });
+}
+function dlgopen22(s)
+{
+    J.dialog.get({ id: s, page: '_content/content.html', skin: s });
+}
+function dlgopen23()
+{
+    var ok = function()
+	{J.dialog.inwin['test23'].crebtn( 'ok', '确 定', function(){ alert('你点了确定按钮，你的系统将被删除！'); J.dialog.inwin['test23'].cancel(); });
+	};
+	J.dialog.get({ id: 'test23', title: '删除对话框', html: '<p align="center" style="_margin-top:10px;"><img src="_content/_icon.gif" align="absmiddle">&nbsp;&nbsp;<a href="http://www.google.com" onclick="cancel();" target="_blank">你确定要删除吗？</a></p>', skin: 'confirm', width: 250, height: 110, custom: ok});
+}
+	</script>
+</head>
+
+<body>
+    <div id="content">
+		<h2>常规弹出窗口示例页</h2><hr size="1" style="width:400px;" align="left"/>
+		<h3>新增4. 增加谷歌浏览器皮肤和提示对话框专用皮肤</h3>
+		<div>
+		    <p><input type="button" id="q" value="Chrome皮肤样式(默认)" onclick="dlgopen22('default')"/>
+			<input type="button" id="p" value="天蓝色的皮肤样式" onclick="dlgopen22('skyblue')"/>
+			<input type="button" id="r" value="提示对话框专用皮肤" onclick="dlgopen23()"/>
+			<input type="button" id="q" value="extjs皮肤样式" onclick="dlgopen22('extjs')"/>
+			<input type="button" id="q" value="银灰色皮肤样式" onclick="dlgopen22('silvergray')"/></p>
+		</div>
+		<h3>新增3. 当主调函数里内容页参数为html时可通过custom参数来执行函数控制窗口对象。</h3>
+		<div>
+		    <p><input type="button" id="p" value="改窗口的取消按钮文本为更改" onclick="dlgopen19()"/>
+			<input type="button" id="q" value="更改窗口上面X关闭按钮触发的事件" onclick="dlgopen20()"/>
+			<input type="button" id="r" value="在页脚创建一个新的确定按钮" onclick="dlgopen21()"/></p>
+		</div>
+		<h3>新增2. 是否拖动，改变大小，显示页脚开关和在内容页动态改窗口大小</h3>
+		<div>
+		    <p><input type="button" id="s" value="不允许拖动和改大小" onclick="dlgopen16()"/>
+			<input type="button" id="t" value="不显示页脚" onclick="dlgopen17()"/>
+			<input type="button" id="u" value="在内容用按钮控制窗口大小" onclick="dlgopen18()"/></p>
+		</div>
+		<h3>新增1. 限制窗口拖动在浏览器范围内和传自定义值到内容页</h3>
+		<div>
+		    <p><input type="button" id="m" value="在浏览器内拖动" onclick="dlgopen13()"/>
+			<input type="button" id="n" value="传自定义值到内容页" onclick="dlgopen14()"/>
+			<input type="button" id="o" value="传自定义函数到内容页" onclick="dlgopen15()"/></p>
+		</div>
+		<h3>1. 弹出窗口的普通基本功能 </h3>
+	    <div>
+	        <p><input type="button" id="a" value="不带遮罩层的普通窗口" onclick="dlgopen1()"/>&nbsp;&nbsp;
+			<input type="button" id="b" value="带遮罩层的普通窗口" onclick="dlgopen2()"/>&nbsp;&nbsp;
+			<input type="button" id="c" value="内容页为外部连接的窗口" onclick="dlgopen3()"/><br/>
+			<input type="button" id="d" value="内容页为html代码的窗口" onclick="dlgopen4()"/>&nbsp;&nbsp;
+			<input type="button" id="e" value="在指定位置弹出的窗口" onclick="dlgopen5()"/>&nbsp;&nbsp;
+			<input type="button" id="f" value="带子窗口的窗口" onclick="dlgopen6()"/>&nbsp;&nbsp;
+			<input type="button" id="l" value="创建其它按钮" onclick="dlgopen12()"/></p>
+		</div>
+		<h3>2. 在调用页面关闭弹出的窗口</h3>
+		<div>
+		    <p><input type="button" id="g" value="首先要打开的窗口" onclick="dlgopen7()"/><input type="button" value="关闭弹出窗口" onclick="closdlg();"/></p>
+		</div>
+		<h3>3. 将文本框的值传到窗口的文本框里</h3>
+		<div>
+		    <p><input type="button" id="h" value="首先要打开的窗口" onclick="dlgopen8()"/><input id="txt1" value="lhgcore" type="text"/>
+			<input type="button" value="将文本框的值传到窗口的文本框里" onclick="todlgval()"/><input type="button" value="取窗口的文本框里值到调用页面的文本框" onclick="dlgtoval()"/></p>
+		</div>
+		<h3>4. 关闭窗口并刷新或跳转调用页面或父窗口</h3>
+		<div>
+		    <p><input type="button" id="i" value="刷新或跳转调用页面" onclick="dlgopen9()"/>
+			<input type="button" id="j" value="刷新或跳转父窗口" onclick="dlgopen10()"/></p>
+		</div>
+		<h3>5. 子父窗口之间或子窗口和调用页面之间的传值</h3>
+		<div>
+		    <p><input type="button" id="k" value="子父窗口之间的传值" onclick="dlgopen11()"/>
+			<input type="text" id="txt4" value="lhgcore"/><input type="button" value="将文本框中的值传到子窗口" onclick="tochild();"/></p>
+		</div>
+	</div>
+</body>
+</html>
+ 
